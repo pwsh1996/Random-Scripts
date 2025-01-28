@@ -20,3 +20,7 @@ A taskmanager (ish) CPU monitor
 
 ![image](https://github.com/user-attachments/assets/1905f5c5-bee5-4b3c-95e9-0cbe753359bb)
 
+# Get-MSDownload
+scrapes the Microsoft  site for downloads (maybe you you find something fun)
+
+![image](https://github.com/user-attachments/assets/01bb523d-01f1-42b9-a05f-b8bc7c668381)
