@@ -1,0 +1,31 @@
+function Display-Hex {
+    param (
+        [Parameter(Mandatory=$true)]
+        [string]$filePath
+    )
+
+    $bytes = [System.IO.File]::ReadAllBytes($filePath)
+    $offset = 0
+
+    Write-Output "Offset          Hex Data                                           Decoded Text"
+    Write-Output "----------------------------------------------------------------------------------"
+
+    for ($i = 0; $i -lt $bytes.Length; $i += 16) {
+        $lineBytes = $bytes[$i..($i + 15)]
+
+        $hexPart = -join ($lineBytes | ForEach-Object { $_.ToString("X2") + " " })
+        $asciiPart = -join ($lineBytes | ForEach-Object {
+            if ($_ -ge 0x20 -and $_ -le 0x7E) {
+                return [char]$_
+            } else {
+                return '.'
+            }
+        })
+
+        Write-Output ("{0:X8}    {1,-47}    {2}" -f $offset, $hexPart, $asciiPart)
+        $offset += 16
+    }
+}
+
+# Example usage:
+# Display-Hex -filePath "C:\Users\jacob.petrie\Downloads\Firefox Installer.exe"
