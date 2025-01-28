@@ -15,3 +15,8 @@ A simple box and whisker processer graph, I want to turn this into a proper func
 
 ![image](https://github.com/user-attachments/assets/e0b5aa6a-a84f-44d8-bb10-80600f97cca7)
 
+# mon.ps1
+A taskmanager (ish) CPU monitor
+
+![image](https://github.com/user-attachments/assets/1905f5c5-bee5-4b3c-95e9-0cbe753359bb)
+
