@@ -24,3 +24,8 @@ A taskmanager (ish) CPU monitor
 scrapes the Microsoft  site for downloads (maybe you you find something fun)
 
 ![image](https://github.com/user-attachments/assets/01bb523d-01f1-42b9-a05f-b8bc7c668381)
+
+# SophosLogDownloader.ps1
+Pulls event logs from Sophos Centeral via API for the past 24hrs.
+
+![image](https://github.com/user-attachments/assets/2c39bb66-0902-4684-b550-ca397c74f298)
